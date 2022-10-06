@@ -129,7 +129,9 @@ COMO ADICIONAR ARQUIVOS AO CONTROLE DE VERSÃO
       [master (root-commit) d190596] commit inicial
       1 file changed, 0 insertions(+), 0 deletions(-)
       create mode 100644 meu texto.txt
-
+------------------------------------------------------------------------------------------------------
+como enviar alterações usando 'git push'
+------------------------------------------------------------------------------------------------------
    MINGW64(master)
    $ git push
 
@@ -144,7 +146,7 @@ COMO ADICIONAR ARQUIVOS AO CONTROLE DE VERSÃO
 
 
       MINGW64(master)
-      $ git remote add origin https://github.com/joao-p-g-rodrigues/progeto1
+      $ git remote add origin https://github.com/joao-p-g-rodrigues/estudando-git
 
    MINGW64(master)
    $ git push
@@ -160,18 +162,19 @@ COMO ADICIONAR ARQUIVOS AO CONTROLE DE VERSÃO
 
       MINGW64(master)
       $ git push --set-upstream origin master
-         Enumerating objects: 3, done.
-         Counting objects: 100% (3/3), done.
-         Writing objects: 100% (3/3), 249 bytes | 249.00 KiB/s, done.
-         Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-         remote:
+         Enumerating objects: 7, done.
+         Counting objects: 100% (7/7), done.
+         Delta compression using up to 4 threads
+         Compressing objects: 100% (7/7), done.
+         Writing objects: 100% (7/7), 20.85 KiB | 2.98 MiB/s, done.  
+         Total 7 (delta 0), reused 0 (delta 0), pack-reused 0        
+         remote: 
          remote: Create a pull request for 'master' on GitHub by visiting:
-         remote:      https://github.com/joao-p-g-rodrigues/progeto1/pull/new/master
-         remote:
-         To https://github.com/joao-p-g-rodrigues/progeto1
-         * [new branch]      master -> master
+         remote:      https://github.com/joao-p-g-rodrigues/estudando * [new branch]      master -> master
          branch 'master' set up to track 'origin/master'.
-
+------------------------------------------------------------------------------------------------------
+ciclo de atualização do código
+------------------------------------------------------------------------------------------------------
    MINGW64(master)
    $ git status
    
