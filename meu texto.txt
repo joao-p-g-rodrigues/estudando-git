@@ -202,52 +202,38 @@ ciclo de atualização do código
             modified:   meu texto.txt
 
    MINGW64(master)
-   $ git commit -m "permitir cadastro"
-
-      [master 42eab33] permitir cadastro
-      1 file changed, 1 insertion(+)
+   $  git commit -m "atualizndo linhas"
+      [master 23eda1a] atualizndo linhas
+      1 file changed, 15 insertions(+), 12 deletions(-)
 
    MINGW64(master)
    $ git push
-      Enumerating objects: 5, done.
-      Counting objects: 100% (5/5), done.
-      Writing objects: 100% (3/3), 312 bytes | 156.00 KiB/s, done.
-      Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-      To https://github.com/joao-p-g-rodrigues/progeto1
-         d190596..42eab33  master -> master
-
+------------------------------------------------------------------------------------------------------
+como verificar histórico de atualizações 
 ------------------------------------------------------------------------------------------------------
    MINGW64(master)
    $ git reflog
-
-      42eab33 (HEAD -> master, origin/master) HEAD@{0}: commit: permitir cadastro
-      d190596 HEAD@{1}: commit (initial): commit inicial
-
+      23eda1a (HEAD -> master, origin/master) HEAD@{0}: commit: atualizndo linhas
+      9798407 HEAD@{1}: commit (initial): commit inicial
+------------------------------------------------------------------------------------------------------
+como navegar entre as versões do código
+------------------------------------------------------------------------------------------------------
    MINGW64(master)
-   $ git reset --hard d190596
+   $ git reset --hard 23eda1a
    
-      HEAD is now at d190596 commit inicial
-
-   MINGW64(master)
-   $ git status
-   
-      On branch master
-      Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
-      (use "git pull" to update your local branch)
-
-      nothing to commit, working tree clean
 
    MINGW64(master)
    $ git reflog
 
-      d190596 (HEAD -> master) HEAD@{0}: reset: moving to d190596
-      42eab33 (origin/master) HEAD@{1}: commit: permitir cadastro
-      d190596 (HEAD -> master) HEAD@{2}: commit (initial): commit inicial
+      23eda1a (HEAD -> master, origin/master) HEAD@{0}: checkout: moving from master to master
+      23eda1a (HEAD -> master, origin/master) HEAD@{1}: reset: moving to 23eda1a
+      23eda1a (HEAD -> master, origin/master) HEAD@{2}: commit: atualizndo linhas
+      9798407 HEAD@{3}: commit (initial): commit inicial
 
    MINGW64(master)
-   $ git reset --hard 42eab33
+   $ git reset --hard 23eda1a
       
-      HEAD is now at 42eab33 permitir cadastro
+      HEAD is now at 23eda1a atualizndo linhas
 
    MINGW64(master)
    $ git reflog
