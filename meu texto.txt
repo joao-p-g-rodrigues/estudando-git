@@ -241,4 +241,15 @@ como navegar entre as versões do código
       d190596 HEAD@{1}: reset: moving to d190596
       42eab33 (HEAD -> master, origin/master) HEAD@{2}: commit: permitir cadastro
       d190596 HEAD@{3}: commit (initial): commit inicial
+------------------------------------------------------------------------------------------------------
+O que sao Branchs
+------------------------------------------------------------------------------------------------------
+caminhos diferentes para o ersionamento e armazenamento do codigo 
+que esta sendo desenvolvido por uma equipe
+
+branch (A) 'develop' codigo em desenvolvimento 
+
+branch (B) 'staging' aplicações em teses/funcionamento
+
+branch (C) 'master/matching' aplicação ao produto funcional e testes 
 
