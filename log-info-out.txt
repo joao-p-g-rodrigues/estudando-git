@@ -1,0 +1,805 @@
+    
+[2022-10-03T02:17:42.319Z] Nível de log: Info
+    
+[2022-10-03T02:17:42.332Z] [info] Validando
+
+    git localizado em: C:\Program Files\Git\cmd
+ \git.exe
+    
+[2022-10-03T02:17:42.441Z] [info] Usando
+
+    git 2.37.3.windows.1 de C:\Program Files\Git\cmd
+ \git.exe
+
+    [2022-10-03T02:17:42.563Z] >
+ git rev-parse --show-toplevel [96ms]
+    
+[2022-10-03T02:17:43.141Z] >
+    
+ git rev-parse -
+
+-git-dir -
+    -git-common-dir [562ms]
+[2022-10-03T02:17:43.166Z] [info] Open repository: c:\Users\C.E.U. Flor de Lotus\Documents\atividades joao pedro g. rodrigues\programing\repost-tree
+
+    [2022-10-03T02:17:43.567Z] >
+ git status -z -uall [380ms]
+
+    [2022-10-03T02:17:43.677Z] >
+ git fetch [500ms]
+
+    [2022-10-03T02:17:43.689Z] >
+ git rev-parse --show-toplevel [492ms]
+    
+[2022-10-03T02:17:43.689Z] fatal: not a
+
+    git repository (or any of the parent directories): 
+ .git
+
+    [2022-10-03T02:17:43.873Z] >
+ git symbolic-ref --short HEAD [297ms]
+
+    [2022-10-03T02:17:44.010Z] >
+ git rev-parse --show-toplevel [301ms]
+    
+[2022-10-03T02:17:44.010Z] fatal: not a
+
+    git repository (or any of the parent directories): 
+ .git
+
+    [2022-10-03T02:17:44.168Z] >
+ git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [282ms]
+
+    [2022-10-03T02:17:44.460Z] >
+ git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [284ms]
+
+    [2022-10-03T02:17:44.461Z] >
+ git rev-parse --show-toplevel [442ms]
+    
+[2022-10-03T02:17:44.461Z] fatal: not a
+
+    git repository (or any of the parent directories): 
+ .git
+
+    [2022-10-03T02:17:44.534Z] >
+ git check-ignore -v -z --stdin [439ms]
+
+    [2022-10-03T02:17:44.536Z] >
+ git remote --verbose [313ms]
+
+    [2022-10-03T02:17:44.665Z] >
+ git rev-parse --show-toplevel [183ms]
+    
+[2022-10-03T02:17:44.665Z] fatal: not a
+
+    git repository (or any of the parent directories): 
+ .git
+
+    [2022-10-03T02:17:44.709Z] >
+ git config --get commit.template [155ms]
+
+    [2022-10-03T02:17:44.843Z] >
+ git status -z -uall [124ms]
+
+    [2022-10-03T02:17:44.926Z] >
+ git symbolic-ref --short HEAD [77ms]
+
+    [2022-10-03T02:17:45.009Z] >
+ git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [77ms]
+
+    [2022-10-03T02:17:45.104Z] >
+ git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [89ms]
+
+    [2022-10-03T02:17:45.112Z] >
+ git remote --verbose [91ms]
+
+    [2022-10-03T02:17:45.190Z] >
+ git config --get commit.template [71ms]
+
+    [2022-10-03T02:17:45.285Z] >
+ git status -z -uall [88ms]
+
+    [2022-10-03T02:17:45.363Z] >
+ git symbolic-ref --short HEAD [73ms]
+
+    [2022-10-03T02:17:45.440Z] >
+ git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [71ms]
+
+    [2022-10-03T02:17:45.540Z] >
+ git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [95ms]
+
+    [2022-10-03T02:17:45.544Z] >
+ git remote --verbose [93ms]
+
+    [2022-10-03T02:17:45.621Z] >
+ git config --get commit.template [70ms]
+
+    [2022-10-03T02:17:47.612Z] >
+ git rev-parse --show-toplevel [85ms]
+    
+[2022-10-03T02:17:47.612Z] fatal: not a
+
+    git repository (or any of the parent directories): 
+ .git
+    
+[2022-10-03T02:18:15.417Z] >
+
+    git ls-files --stage -- C:\Users\C.E.U. Flor de Lotus\Documents\atividades joao pedro g. rodrigues\programing\repost-tree
+ \git\meu texto.txt [172ms]
+    
+[2022-10-03T02:18:15.435Z] >
+
+    git show --textconv 
+ :git/meu texto.txt [204ms]
+
+    [2022-10-03T02:20:45.355Z] >
+ git fetch [130ms]
+
+    [2022-10-03T02:20:45.455Z] >
+ git status -z -uall [93ms]
+
+    [2022-10-03T02:20:45.537Z] >
+ git symbolic-ref --short HEAD [75ms]
+
+    [2022-10-03T02:20:45.614Z] >
+ git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [71ms]
+
+    [2022-10-03T02:20:45.712Z] >
+ git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [93ms]
+
+    [2022-10-03T02:20:45.719Z] >
+ git remote --verbose [94ms]
+
+    [2022-10-03T02:20:45.800Z] >
+ git config --get commit.template [72ms]
+    
+[2022-10-03T02:20:46.704Z] >
+
+    git ls-files --stage -- C:\Users\C.E.U. Flor de Lotus\Documents\atividades joao pedro g. rodrigues\programing\repost-tree
+ \git\meu texto.txt [94ms]
+    
+[2022-10-03T02:20:46.804Z] >
+
+    git show --textconv 
+ :git/meu texto.txt [86ms]
+
+    [2022-10-03T02:23:45.952Z] >
+ git fetch [121ms]
+
+    [2022-10-03T02:23:46.059Z] >
+ git status -z -uall [100ms]
+
+    [2022-10-03T02:23:46.144Z] >
+ git symbolic-ref --short HEAD [77ms]
+
+    [2022-10-03T02:23:46.227Z] >
+ git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [77ms]
+
+    [2022-10-03T02:23:46.328Z] >
+ git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [95ms]
+
+    [2022-10-03T02:23:46.340Z] >
+ git remote --verbose [101ms]
+
+    [2022-10-03T02:23:46.424Z] >
+ git config --get commit.template [74ms]
+    
+[2022-10-03T02:23:47.245Z] >
+
+    git ls-files --stage -- C:\Users\C.E.U. Flor de Lotus\Documents\atividades joao pedro g. rodrigues\programing\repost-tree
+ \git\meu texto.txt [75ms]
+    
+[2022-10-03T02:23:47.353Z] >
+
+    git show --textconv 
+ :git/meu texto.txt [88ms]
+
+    [2022-10-03T02:26:46.555Z] >
+ git fetch [111ms]
+
+    [2022-10-03T02:26:46.655Z] >
+ git status -z -uall [93ms]
+
+    [2022-10-03T02:26:46.737Z] >
+ git symbolic-ref --short HEAD [76ms]
+
+    [2022-10-03T02:26:46.813Z] >
+ git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [70ms]
+
+    [2022-10-03T02:26:46.910Z] >
+ git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [91ms]
+
+    [2022-10-03T02:26:46.920Z] >
+ git remote --verbose [94ms]
+
+    [2022-10-03T02:26:47.000Z] >
+ git config --get commit.template [73ms]
+    
+[2022-10-03T02:26:47.943Z] >
+
+    git ls-files --stage -- C:\Users\C.E.U. Flor de Lotus\Documents\atividades joao pedro g. rodrigues\programing\repost-tree
+ \git\meu texto.txt [91ms]
+    
+[2022-10-03T02:26:48.056Z] >
+
+    git show --textconv 
+ :git/meu texto.txt [94ms]
+
+    [2022-10-03T02:29:47.162Z] >
+ git fetch [142ms]
+
+    [2022-10-03T02:29:47.276Z] >
+ git status -z -uall [106ms]
+
+    [2022-10-03T02:29:47.364Z] >
+ git symbolic-ref --short HEAD [80ms]
+
+    [2022-10-03T02:29:47.442Z] >
+ git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [72ms]
+
+    [2022-10-03T02:29:47.535Z] >
+ git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [87ms]
+
+    [2022-10-03T02:29:47.541Z] >
+ git remote --verbose [87ms]
+
+    [2022-10-03T02:29:47.619Z] >
+ git config --get commit.template [71ms]
+    
+[2022-10-03T02:29:48.506Z] >
+
+    git ls-files --stage -- C:\Users\C.E.U. Flor de Lotus\Documents\atividades joao pedro g. rodrigues\programing\repost-tree
+ \git\meu texto.txt [96ms]
+    
+[2022-10-03T02:29:48.608Z] >
+
+    git show --textconv 
+ :git/meu texto.txt [84ms]
+
+    [2022-10-03T02:32:47.784Z] >
+ git fetch [133ms]
+
+    [2022-10-03T02:32:47.892Z] >
+ git status -z -uall [101ms]
+
+    [2022-10-03T02:32:47.975Z] >
+ git symbolic-ref --short HEAD [77ms]
+
+    [2022-10-03T02:32:48.055Z] >
+ git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [74ms]
+
+    [2022-10-03T02:32:48.155Z] >
+ git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [94ms]
+
+    [2022-10-03T02:32:48.168Z] >
+ git remote --verbose [100ms]
+
+    [2022-10-03T02:32:48.248Z] >
+ git config --get commit.template [72ms]
+    
+[2022-10-03T02:32:49.153Z] >
+
+    git ls-files --stage -- C:\Users\C.E.U. Flor de Lotus\Documents\atividades joao pedro g. rodrigues\programing\repost-tree
+ \git\meu texto.txt [107ms]
+    
+[2022-10-03T02:32:49.246Z] >
+
+    git show --textconv 
+ :git/meu texto.txt [84ms]
+
+    [2022-10-03T02:35:48.404Z] >
+ git fetch [129ms]
+
+    [2022-10-03T02:35:48.504Z] >
+ git status -z -uall [93ms]
+
+    [2022-10-03T02:35:48.587Z] >
+ git symbolic-ref --short HEAD [76ms]
+
+    [2022-10-03T02:35:48.664Z] >
+ git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [71ms]
+
+    [2022-10-03T02:35:48.775Z] >
+ git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [105ms]
+
+    [2022-10-03T02:35:48.786Z] >
+ git remote --verbose [108ms]
+
+    [2022-10-03T02:35:48.878Z] >
+ git config --get commit.template [83ms]
+    
+[2022-10-03T02:35:49.747Z] >
+
+    git ls-files --stage -- C:\Users\C.E.U. Flor de Lotus\Documents\atividades joao pedro g. rodrigues\programing\repost-tree
+ \git\meu texto.txt [101ms]
+    
+[2022-10-03T02:35:49.860Z] >
+
+    git show --textconv 
+ :git/meu texto.txt [90ms]
+
+    [2022-10-03T02:38:49.033Z] >
+ git fetch [131ms]
+
+    [2022-10-03T02:38:49.150Z] >
+ git status -z -uall [108ms]
+
+    [2022-10-03T02:38:49.234Z] >
+ git symbolic-ref --short HEAD [78ms]
+
+    [2022-10-03T02:38:49.322Z] >
+ git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [81ms]
+
+    [2022-10-03T02:38:49.491Z] >
+ git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [164ms]
+
+    [2022-10-03T02:38:49.534Z] >
+ git remote --verbose [200ms]
+
+    [2022-10-03T02:38:49.629Z] >
+ git config --get commit.template [80ms]
+    
+[2022-10-03T02:38:50.394Z] >
+
+    git ls-files --stage -- C:\Users\C.E.U. Flor de Lotus\Documents\atividades joao pedro g. rodrigues\programing\repost-tree
+ \git\meu texto.txt [105ms]
+    
+[2022-10-03T02:38:50.493Z] >
+
+    git show --textconv 
+ :git/meu texto.txt [85ms]
+
+    [2022-10-03T02:41:49.807Z] >
+ git fetch [149ms]
+
+    [2022-10-03T02:41:49.917Z] >
+ git status -z -uall [103ms]
+
+    [2022-10-03T02:41:50.007Z] >
+ git symbolic-ref --short HEAD [80ms]
+
+    [2022-10-03T02:41:50.095Z] >
+ git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [81ms]
+
+    [2022-10-03T02:41:50.206Z] >
+ git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [104ms]
+
+    [2022-10-03T02:41:50.212Z] >
+ git remote --verbose [104ms]
+
+    [2022-10-03T02:41:50.302Z] >
+ git config --get commit.template [81ms]
+    
+[2022-10-03T02:41:51.085Z] >
+
+    git ls-files --stage -- C:\Users\C.E.U. Flor de Lotus\Documents\atividades joao pedro g. rodrigues\programing\repost-tree
+ \git\meu texto.txt [80ms]
+    
+[2022-10-03T02:41:51.187Z] >
+
+    git show --textconv 
+ :git/meu texto.txt [89ms]
+
+    [2022-10-03T02:44:50.449Z] >
+ git fetch [118ms]
+
+    [2022-10-03T02:44:50.546Z] >
+ git status -z -uall [92ms]
+
+    [2022-10-03T02:44:50.648Z] >
+ git symbolic-ref --short HEAD [95ms]
+
+    [2022-10-03T02:44:50.732Z] >
+ git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [76ms]
+
+    [2022-10-03T02:44:50.836Z] >
+ git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [98ms]
+
+    [2022-10-03T02:44:50.846Z] >
+ git remote --verbose [101ms]
+
+    [2022-10-03T02:44:50.924Z] >
+ git config --get commit.template [70ms]
+    
+[2022-10-03T02:44:51.797Z] >
+
+    git ls-files --stage -- C:\Users\C.E.U. Flor de Lotus\Documents\atividades joao pedro g. rodrigues\programing\repost-tree
+ \git\meu texto.txt [91ms]
+    
+[2022-10-03T02:44:51.894Z] >
+
+    git show --textconv 
+ :git/meu texto.txt [89ms]
+
+    [2022-10-03T02:47:51.094Z] >
+ git fetch [140ms]
+
+    [2022-10-03T02:47:51.196Z] >
+ git status -z -uall [96ms]
+
+    [2022-10-03T02:47:51.275Z] >
+ git symbolic-ref --short HEAD [72ms]
+
+    [2022-10-03T02:47:51.351Z] >
+ git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [70ms]
+
+    [2022-10-03T02:47:51.448Z] >
+ git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [90ms]
+
+    [2022-10-03T02:47:51.453Z] >
+ git remote --verbose [89ms]
+
+    [2022-10-03T02:47:51.554Z] >
+ git config --get commit.template [92ms]
+    
+[2022-10-03T02:47:52.439Z] >
+
+    git ls-files --stage -- C:\Users\C.E.U. Flor de Lotus\Documents\atividades joao pedro g. rodrigues\programing\repost-tree
+ \git\meu texto.txt [85ms]
+    
+[2022-10-03T02:47:52.542Z] >
+
+    git show --textconv 
+ :git/meu texto.txt [94ms]
+
+    [2022-10-03T02:50:51.727Z] >
+ git fetch [140ms]
+
+    [2022-10-03T02:50:51.834Z] >
+ git status -z -uall [100ms]
+
+    [2022-10-03T02:50:51.918Z] >
+ git symbolic-ref --short HEAD [75ms]
+
+    [2022-10-03T02:50:51.998Z] >
+ git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [73ms]
+
+    [2022-10-03T02:50:52.096Z] >
+ git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [92ms]
+
+    [2022-10-03T02:50:52.104Z] >
+ git remote --verbose [93ms]
+
+    [2022-10-03T02:50:52.183Z] >
+ git config --get commit.template [71ms]
+    
+[2022-10-03T02:50:53.166Z] >
+
+    git ls-files --stage -- C:\Users\C.E.U. Flor de Lotus\Documents\atividades joao pedro g. rodrigues\programing\repost-tree
+ \git\meu texto.txt [153ms]
+    
+[2022-10-03T02:50:53.276Z] >
+
+    git show --textconv 
+ :git/meu texto.txt [86ms]
+
+    [2022-10-03T02:53:52.338Z] >
+ git fetch [125ms]
+
+    [2022-10-03T02:53:52.431Z] >
+ git status -z -uall [87ms]
+
+    [2022-10-03T02:53:52.512Z] >
+ git symbolic-ref --short HEAD [74ms]
+
+    [2022-10-03T02:53:52.588Z] >
+ git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [71ms]
+
+    [2022-10-03T02:53:52.683Z] >
+ git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [89ms]
+
+    [2022-10-03T02:53:52.692Z] >
+ git remote --verbose [92ms]
+
+    [2022-10-03T02:53:52.768Z] >
+ git config --get commit.template [69ms]
+    
+[2022-10-03T02:53:53.622Z] >
+
+    git ls-files --stage -- C:\Users\C.E.U. Flor de Lotus\Documents\atividades joao pedro g. rodrigues\programing\repost-tree
+ \git\meu texto.txt [96ms]
+    
+[2022-10-03T02:53:53.715Z] >
+
+    git show --textconv 
+ :git/meu texto.txt [82ms]
+
+    [2022-10-03T02:56:52.918Z] >
+ git fetch [128ms]
+
+    [2022-10-03T02:56:53.018Z] >
+ git status -z -uall [93ms]
+
+    [2022-10-03T02:56:53.099Z] >
+ git symbolic-ref --short HEAD [75ms]
+
+    [2022-10-03T02:56:53.181Z] >
+ git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [77ms]
+
+    [2022-10-03T02:56:53.289Z] >
+ git remote --verbose [94ms]
+
+    [2022-10-03T02:56:53.289Z] >
+ git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [102ms]
+
+    [2022-10-03T02:56:53.377Z] >
+ git config --get commit.template [78ms]
+    
+[2022-10-03T02:56:54.216Z] >
+
+    git ls-files --stage -- C:\Users\C.E.U. Flor de Lotus\Documents\atividades joao pedro g. rodrigues\programing\repost-tree
+ \git\meu texto.txt [104ms]
+    
+[2022-10-03T02:56:54.325Z] >
+
+    git show --textconv 
+ :git/meu texto.txt [86ms]
+
+    [2022-10-03T02:59:53.525Z] >
+ git fetch [122ms]
+
+    [2022-10-03T02:59:53.630Z] >
+ git status -z -uall [99ms]
+
+    [2022-10-03T02:59:53.716Z] >
+ git symbolic-ref --short HEAD [79ms]
+
+    [2022-10-03T02:59:53.798Z] >
+ git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [74ms]
+
+    [2022-10-03T02:59:53.905Z] >
+ git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [101ms]
+
+    [2022-10-03T02:59:53.916Z] >
+ git remote --verbose [106ms]
+
+    [2022-10-03T02:59:54.000Z] >
+ git config --get commit.template [77ms]
+    
+[2022-10-03T02:59:54.868Z] >
+
+    git ls-files --stage -- C:\Users\C.E.U. Flor de Lotus\Documents\atividades joao pedro g. rodrigues\programing\repost-tree
+ \git\meu texto.txt [84ms]
+    
+[2022-10-03T02:59:54.983Z] >
+
+    git show --textconv 
+ :git/meu texto.txt [91ms]
+
+    [2022-10-03T03:02:54.158Z] >
+ git fetch [129ms]
+
+    [2022-10-03T03:02:54.256Z] >
+ git status -z -uall [92ms]
+
+    [2022-10-03T03:02:54.333Z] >
+ git symbolic-ref --short HEAD [71ms]
+
+    [2022-10-03T03:02:54.412Z] >
+ git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [73ms]
+
+    [2022-10-03T03:02:54.510Z] >
+ git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [92ms]
+
+    [2022-10-03T03:02:54.520Z] >
+ git remote --verbose [96ms]
+
+    [2022-10-03T03:02:54.599Z] >
+ git config --get commit.template [72ms]
+    
+[2022-10-03T03:02:55.457Z] >
+
+    git ls-files --stage -- C:\Users\C.E.U. Flor de Lotus\Documents\atividades joao pedro g. rodrigues\programing\repost-tree
+ \git\meu texto.txt [98ms]
+    
+[2022-10-03T03:02:55.556Z] >
+
+    git show --textconv 
+ :git/meu texto.txt [86ms]
+
+    [2022-10-03T03:05:54.752Z] >
+ git fetch [121ms]
+
+    [2022-10-03T03:05:54.854Z] >
+ git status -z -uall [96ms]
+
+    [2022-10-03T03:05:54.936Z] >
+ git symbolic-ref --short HEAD [75ms]
+
+    [2022-10-03T03:05:55.021Z] >
+ git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [79ms]
+
+    [2022-10-03T03:05:55.119Z] >
+ git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [92ms]
+
+    [2022-10-03T03:05:55.126Z] >
+ git remote --verbose [93ms]
+
+    [2022-10-03T03:05:55.209Z] >
+ git config --get commit.template [73ms]
+    
+[2022-10-03T03:05:56.120Z] >
+
+    git ls-files --stage -- C:\Users\C.E.U. Flor de Lotus\Documents\atividades joao pedro g. rodrigues\programing\repost-tree
+ \git\meu texto.txt [101ms]
+    
+[2022-10-03T03:05:56.218Z] >
+
+    git show --textconv 
+ :git/meu texto.txt [86ms]
+
+    [2022-10-03T03:08:31.539Z] >
+ git status -z -uall [110ms]
+
+    [2022-10-03T03:08:31.623Z] >
+ git symbolic-ref --short HEAD [76ms]
+
+    [2022-10-03T03:08:31.710Z] >
+ git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [79ms]
+
+    [2022-10-03T03:08:31.818Z] >
+ git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [103ms]
+
+    [2022-10-03T03:08:31.827Z] >
+ git remote --verbose [105ms]
+
+    [2022-10-03T03:08:31.910Z] >
+ git config --get commit.template [76ms]
+
+    [2022-10-03T03:08:55.344Z] >
+ git fetch [113ms]
+
+    [2022-10-03T03:08:55.437Z] >
+ git status -z -uall [88ms]
+
+    [2022-10-03T03:08:55.515Z] >
+ git symbolic-ref --short HEAD [72ms]
+
+    [2022-10-03T03:08:55.591Z] >
+ git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [71ms]
+
+    [2022-10-03T03:08:55.685Z] >
+ git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [89ms]
+
+    [2022-10-03T03:08:55.696Z] >
+ git remote --verbose [94ms]
+
+    [2022-10-03T03:08:55.783Z] >
+ git config --get commit.template [81ms]
+    
+[2022-10-03T03:08:56.693Z] >
+
+    git ls-files --stage -- C:\Users\C.E.U. Flor de Lotus\Documents\atividades joao pedro g. rodrigues\programing\repost-tree
+ \git\meu texto.txt [106ms]
+    
+[2022-10-03T03:08:56.799Z] >
+
+    git show --textconv 
+ :git/meu texto.txt [86ms]
+
+    [2022-10-03T03:09:02.884Z] >
+ git status -z -uall [235ms]
+
+    [2022-10-03T03:09:02.966Z] >
+ git symbolic-ref --short HEAD [75ms]
+
+    [2022-10-03T03:09:03.052Z] >
+ git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [81ms]
+
+    [2022-10-03T03:09:03.169Z] >
+ git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [110ms]
+
+    [2022-10-03T03:09:03.180Z] >
+ git remote --verbose [115ms]
+
+    [2022-10-03T03:09:03.267Z] >
+ git config --get commit.template [78ms]
+
+    [2022-10-03T03:09:05.745Z] >
+ git status -z -uall [96ms]
+
+    [2022-10-03T03:09:05.831Z] >
+ git symbolic-ref --short HEAD [78ms]
+
+    [2022-10-03T03:09:05.912Z] >
+ git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [76ms]
+
+    [2022-10-03T03:09:06.017Z] >
+ git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [100ms]
+
+    [2022-10-03T03:09:06.020Z] >
+ git remote --verbose [96ms]
+
+    [2022-10-03T03:09:06.103Z] >
+ git config --get commit.template [76ms]
+
+    [2022-10-03T03:09:18.153Z] >
+ git status -z -uall [96ms]
+
+    [2022-10-03T03:09:18.232Z] >
+ git symbolic-ref --short HEAD [74ms]
+
+    [2022-10-03T03:09:18.313Z] >
+ git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [74ms]
+
+    [2022-10-03T03:09:18.420Z] >
+ git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [101ms]
+
+    [2022-10-03T03:09:18.432Z] >
+ git remote --verbose [107ms]
+
+    [2022-10-03T03:09:18.522Z] >
+ git config --get commit.template [82ms]
+
+    [2022-10-03T03:12:05.957Z] >
+ git fetch [116ms]
+
+    [2022-10-03T03:12:06.082Z] >
+ git status -z -uall [119ms]
+
+    [2022-10-03T03:12:06.176Z] >
+ git symbolic-ref --short HEAD [86ms]
+
+    [2022-10-03T03:12:06.268Z] >
+ git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [86ms]
+
+    [2022-10-03T03:12:06.379Z] >
+ git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [106ms]
+
+    [2022-10-03T03:12:06.386Z] >
+ git remote --verbose [107ms]
+
+    [2022-10-03T03:12:06.477Z] >
+ git config --get commit.template [83ms]
+
+    [2022-10-03T03:15:06.611Z] >
+ git fetch [116ms]
+
+    [2022-10-03T03:15:06.714Z] >
+ git status -z -uall [96ms]
+
+    [2022-10-03T03:15:06.808Z] >
+ git symbolic-ref --short HEAD [80ms]
+
+    [2022-10-03T03:15:06.891Z] >
+ git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [78ms]
+
+    [2022-10-03T03:15:07.006Z] >
+ git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [109ms]
+
+    [2022-10-03T03:15:07.012Z] >
+ git remote --verbose [109ms]
+
+    [2022-10-03T03:15:07.103Z] >
+ git config --get commit.template [84ms]
+    
+[2022-10-03T03:15:23.063Z] >
+
+    git ls-files --stage -- C:\Users\C.E.U. Flor de Lotus\Documents\atividades joao pedro g. rodrigues\programing\repost-tree
+ \git\log-info-out.txt [101ms]
+    
+[2022-10-03T03:15:23.071Z] >
+
+    git show --textconv 
+ :git/log-info-out.txt [124ms]
+
+    [2022-10-03T03:15:23.233Z] >
+ git check-ignore -v -z --stdin [78ms]
+
+    [2022-10-03T03:15:23.773Z] >
+ git status -z -uall [108ms]
+
+    [2022-10-03T03:15:23.857Z] >
+ git symbolic-ref --short HEAD [78ms]
+
+    [2022-10-03T03:15:23.941Z] >
+ git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [78ms]
+
+    [2022-10-03T03:15:24.053Z] >
+ git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [106ms]
+
+    [2022-10-03T03:15:24.059Z] >
+ git remote --verbose [106ms]
+
+[2022-10-03T03:15:24.149Z] >
+ git config --get commit.template [81ms]

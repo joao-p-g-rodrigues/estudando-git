@@ -1,0 +1,47 @@
+MVP financeiro 
+
+O SISTEMA FICARÁ RESPONSÁVEL PELOS REGISTROS DE ROTATIVIDADE DOS CUSTOS MATERIAIS 
+
+IDENTIFICAÇÃo: RN003
+    RESPONSÁVEL: FINANCEIRO
+    TÍTULO: Listagem pagamentos e Compra de insumo
+    DESCRIÇÃO: O financeiro realiza a cotação dos preços fornecidos 
+    pelos fornecedores e API’s, solicita a entrega dos materiais e programa 
+    o pagamento. O registro dessas informações é feito numa planilha e documentado 
+    e referenciado em pdf.
+
+
+        IDENTIFICAÇÃO RF004 / RNF004
+        REFERÊNCIA: RN003
+        DESCRIÇÃO: O sistema deve registrar todos os pagamentos feitos pela 
+        empresa; os pagamentos registrados serão tratados pelo ADMINISTRADOR 
+        em planilhas e documentos pdf para registros fiscais.   
+
+
+        IDENTIFICAÇÃO: RF005 / RNF005
+        REFERÊNCIA: RN003
+        DESCRIÇÃO: O sistema deve registrar as cotações de preço feitas nos 
+        fornecedores a partir dos dados fornecidos pelos fornecedores e API’s 
+        será gerada uma planilha expondo os materiais e as diferenças de preço 
+        pelos fornecedores
+
+IDENTIFICAÇÃO: RN007
+    RESPONSÁVEL: Financeiro
+    TÍTULO: O cliente Realiza do pagamento
+    DESCRIÇÃO: O cliente efetua o pagamento ao entregador (cartão/ dinheiro) 
+    e o entregador informa a conclusão da entrega.
+
+        IDENTIFICAÇÃO: RF011 / RNF011
+        REFERÊNCIA: RN007
+        DESCRIÇÃo: O sistema deve permitir o pagamento do pedido online 
+        por meio de API’s bancárias, pix, ou dinheiro em cédula contabilizados 
+        ao caixa
+
+        IDENTIFICAÇÃO: RF012 / RNF012
+        REFERÊNCIA: RN007
+        DESCRIÇÃO: O sistema deve registrar os clientes que efetuarem compras
+        As diversas formas de pagamentos serão confirmadas pela maquininha ou 
+        conta bancária, a atendente recebe a notificação e por sua vez 
+        confirma o pagamento; os registros serão salvos em bancos de dados que 
+        poderá ser lidos pelo financeiro 
+

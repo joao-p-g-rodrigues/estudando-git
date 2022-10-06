@@ -1,0 +1,255 @@
+olá eu sou uma nova linha 
+------------------------------------------------------------------------------------------------------
+COMANDOS :   
+------------------------------------------------------------------------------------------------------
+   MINGW64(master)
+   $ git --help
+
+         usage: git [-v | --version] 
+                     [-h | --help] 
+                     [-C <path>] 
+                     [-c <name>=<value>]
+                     [--exec-path[=<path>]] 
+                     [--html-path]
+                     [--man-path] 
+                     [--info-path]
+                     [-p | --paginate | -P | --no-pager]
+                     [--no-replace-objects]
+                     [--bare]
+                     [--git-dir=<path>]
+                     [--work-tree=<path>]
+                     [--namespace=<name>]
+                     [--super-prefix=<path>]
+                     [--config-env=<name>=<envvar>]
+                  <command> [<args>]
+
+      These are common Git commands used in various situations:
+
+         start a working area (see also: git help tutorial)
+            clone     Clone a repository into a new directory
+            init      Create an empty Git repository or reinitialize an existing one
+
+         work on the current change (see also: git help everyday)
+            add       Add file contents to the index
+            mv        Move or rename a file, a directory, or a symlink
+            restore   Restore working tree files
+            rm        Remove files from the working tree and from the index
+
+         examine the history and state (see also: git help revisions)
+            bisect    Use binary search to find the commit that introduced a bug
+            diff      Show changes between commits, commit and working tree, etc
+            grep      Print lines matching a pattern
+            log       Show commit logs
+            show      Show various types of objects
+            status    Show the working tree status
+
+         grow, mark and tweak your common history
+            branch    List, create, or delete branches
+            commit    Record changes to the repository
+            merge     Join two or more development histories together
+            rebase    Reapply commits on top of another base tip
+            reset     Reset current HEAD to the specified state
+            switch    Switch branches
+            tag       Create, list, delete or verify a tag object signed with GPG
+
+         collaborate (see also: git help workflows)
+            fetch     Download objects and refs from another repository
+            pull      Fetch from and integrate with another repository or a local branch
+            push      Update remote refs along with associated objects
+
+         'git help -a' and 'git help -g' list available subcommands and some
+         concept guides. See 'git help <command>' or 'git help <concept>'
+         to read about a specific subcommand or concept.
+         See 'git help git' for an overview of the system.
+-----------------------------------------------------------------------------------------------------------------
+COMO INICIALIZAR DIRETORIO 
+----------------------------------------------------------------------------------------------------------------------
+   MINGW64(master) 
+   $ git init
+
+      Initialized empty Git repository in 
+      D:/jao/atividades joao pedro g. rodrigues/programing/repost-tree/git/.git/
+------------------------------------------------------------------------------------------------------------------
+RASTREANDO ARQUIVOS VERIFICANDO STATUS E COMMITS 
+----------------------------------------------------------------------------------------------------------------
+   MINGW64(master)
+   $ git status
+
+      On branch master
+
+      No commits yet
+
+      Untracked files:
+      (use "git add <file>..." to include in what will be committed)
+            meu texto.txt
+
+      nothing added to commit but untracked files present (use "git add" to track)
+------------------------------------------------------------------------------------------------------
+COMO ADICIONAR ARQUIVOS AO CONTROLE DE VERSÃO
+------------------------------------------------------------------------------------------------------
+   MINGW64(master)
+   $ git add "meu texto.txt"
+
+   MINGW64(master)
+   $ git status
+
+      On branch master
+
+      No commits yet
+
+      Changes to be committed:
+      (use "git rm --cached <file>..." to unstage)
+      new file:   meu texto.txt
+
+   MINGW64(master)
+   $ git commit -m "commit inicial"
+      Author identity unknown
+
+      *** Please tell me who you are.
+
+      Run
+
+      git config --global user.email "you@example.com"
+      git config --global user.name "Your Name"
+
+      to set your account's default identity.
+      Omit --global to set the identity only in this repository.
+
+      fatal: unable to auto-detect email address (got '.(none)')
+
+      MINGW64(master)
+      $ git config --global user.email "joao.p.rodrigues@to.estudante.senai.br"
+
+      MINGW64(master)
+      $ git config --global user.name "João Pedro Gonçalves Rodrigues"
+
+   MINGW64(master)
+   $ git commit -m "commit inicial"
+      
+      [master (root-commit) d190596] commit inicial
+      1 file changed, 0 insertions(+), 0 deletions(-)
+      create mode 100644 meu texto.txt
+
+   MINGW64(master)
+   $ git push
+
+      fatal: No configured push destination.
+      Either specify the URL from the command-line or configure a remote repository using
+
+         git remote add <name> <url>
+
+      and then push using the remote name
+
+         git push <name>
+
+
+      MINGW64(master)
+      $ git remote add origin https://github.com/joao-p-g-rodrigues/progeto1
+
+   MINGW64(master)
+   $ git push
+   
+      fatal: The current branch master has no upstream branch.
+      To push the current branch and set the remote as upstream, use
+
+         git push --set-upstream origin master
+
+      To have this happen automatically for branches without a tracking
+      upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+      MINGW64(master)
+      $ git push --set-upstream origin master
+         Enumerating objects: 3, done.
+         Counting objects: 100% (3/3), done.
+         Writing objects: 100% (3/3), 249 bytes | 249.00 KiB/s, done.
+         Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+         remote:
+         remote: Create a pull request for 'master' on GitHub by visiting:
+         remote:      https://github.com/joao-p-g-rodrigues/progeto1/pull/new/master
+         remote:
+         To https://github.com/joao-p-g-rodrigues/progeto1
+         * [new branch]      master -> master
+         branch 'master' set up to track 'origin/master'.
+
+   MINGW64(master)
+   $ git status
+   
+      On branch master
+      Your branch is up to date with 'origin/master'.
+
+      Changes not staged for commit:
+      (use "git add <file>..." to update what will be committed)
+      (use "git restore <file>..." to discard changes in working directory)
+            modified:   meu texto.txt
+
+      no changes added to commit (use "git add" and/or "git commit -a")
+
+   MINGW64(master)
+   $ git add .
+
+   MINGW64(master)
+   $ git status
+      
+      On branch master
+      Your branch is up to date with 'origin/master'.
+
+      Changes to be committed:
+      (use "git restore --staged <file>..." to unstage)
+            modified:   meu texto.txt
+
+   MINGW64(master)
+   $ git commit -m "permitir cadastro"
+
+      [master 42eab33] permitir cadastro
+      1 file changed, 1 insertion(+)
+
+   MINGW64(master)
+   $ git push
+      Enumerating objects: 5, done.
+      Counting objects: 100% (5/5), done.
+      Writing objects: 100% (3/3), 312 bytes | 156.00 KiB/s, done.
+      Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+      To https://github.com/joao-p-g-rodrigues/progeto1
+         d190596..42eab33  master -> master
+
+------------------------------------------------------------------------------------------------------
+   MINGW64(master)
+   $ git reflog
+
+      42eab33 (HEAD -> master, origin/master) HEAD@{0}: commit: permitir cadastro
+      d190596 HEAD@{1}: commit (initial): commit inicial
+
+   MINGW64(master)
+   $ git reset --hard d190596
+   
+      HEAD is now at d190596 commit inicial
+
+   MINGW64(master)
+   $ git status
+   
+      On branch master
+      Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+      (use "git pull" to update your local branch)
+
+      nothing to commit, working tree clean
+
+   MINGW64(master)
+   $ git reflog
+
+      d190596 (HEAD -> master) HEAD@{0}: reset: moving to d190596
+      42eab33 (origin/master) HEAD@{1}: commit: permitir cadastro
+      d190596 (HEAD -> master) HEAD@{2}: commit (initial): commit inicial
+
+   MINGW64(master)
+   $ git reset --hard 42eab33
+      
+      HEAD is now at 42eab33 permitir cadastro
+
+   MINGW64(master)
+   $ git reflog
+      42eab33 (HEAD -> master, origin/master) HEAD@{0}: reset: moving to 42eab33
+      d190596 HEAD@{1}: reset: moving to d190596
+      42eab33 (HEAD -> master, origin/master) HEAD@{2}: commit: permitir cadastro
+      d190596 HEAD@{3}: commit (initial): commit inicial
+
