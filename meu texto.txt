@@ -341,6 +341,4 @@ $ git branch
    master
    * staging
 
-MINGW64 (staging)
-$
 
