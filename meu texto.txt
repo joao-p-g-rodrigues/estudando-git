@@ -320,25 +320,71 @@ que esta sendo desenvolvido por uma equipe
 ------------------------------------------------------------------------------------------------------
 criando branches  
 ------------------------------------------------------------------------------------------------------
-MINGW64 (master) ver branch q esta sendo trabalhada 
-$ git branch
-   * master
+   MINGW64 (master) ver branch q esta sendo trabalhada 
+   $ git branch
+      * master
 
-MINGW64 (master) para criar a nova bench e so adicionar o nome para funcionalidade ou fluxo de vercionamento desejado
-$ git branch staging
+   MINGW64 (master) para criar a nova bench e so adicionar o nome para funcionalidade ou fluxo de vercionamento desejado
+   $ git branch staging
 
-MINGW64 (master)
-$ git branch
-   * master
-   staging
+   MINGW64 (master)
+   $ git branch
+      * master
+      staging
 
-MINGW64 (master) para trocar de branches e passar a versionar na branch necessaria
-$ git checkout staging 
-   Switched to branch 'staging'
+   MINGW64 (master) para trocar de branches e passar a versionar na branch necessaria
+   $ git checkout staging 
+      Switched to branch 'staging'
 
-MINGW64 (staging) 
-$ git branch
-   master
-   * staging
+   MINGW64 (staging) 
+   $ git branch
+      master
+      * staging
 
+   MINGW64 (staging)
+   $ git status
+      On branch staging
+      Your branch is up to date with 'origin/staging'.
+
+      Changes not staged for commit:
+      (use "git add <file>..." to update what will be committed)
+      (use "git restore <file>..." to discard changes in working directory)
+            modified:   meu texto.txt
+
+      no changes added to commit (use "git add" and/or "git commit -a")
+
+   MINGW64 (staging)
+   $ git add "meu texto.txt"
+
+   MINGW64 (staging)
+   $ git commit -m "adicionando nova branch"
+      [staging 10bf9a6] adicionando nova branch
+      1 file changed, 2 deletions(-)
+
+   MINGW64 (staging)
+   $ git status
+      On branch staging
+      Your branch is ahead of 'origin/staging' by 1 commit.
+      (use "git push" to publish your local commits)
+
+      nothing to commit, working tree clean
+
+   MINGW64(staging)
+   $ git push --set-upstream origin staging
+
+   MINGW64 (staging)
+   $ git push
+      Enumerating objects: 5, done.
+      Counting objects: 100% (5/5), done.
+      Delta compression using up to 4 threads
+      Compressing objects: 100% (3/3), done.
+      Writing objects: 100% (3/3), 330 bytes | 330.00 KiB/s, done.
+      Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+      remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+      To https://github.com/joao-p-g-rodrigues/estudando-git
+         3cf7fc5..10bf9a6  staging -> staging
+------------------------------------------------------------------------------------------------------
+git merge 
+como unir o codigo
+------------------------------------------------------------------------------------------------------
 
