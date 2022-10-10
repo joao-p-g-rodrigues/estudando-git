@@ -387,70 +387,86 @@ criando branches
 git merge 
 como unir o codigo
 ------------------------------------------------------------------------------------------------------
-
+   
    MINGW64(master)
    $ git checkout staging
-   Switched to branch 'staging'
-   Your branch is up to date with 'origin/staging'.
+      Switched to branch 'staging'
+      Your branch is up to date with 'origin/staging'.
 
    MINGW64(staging)
    $ git status
-   On branch staging
-   Your branch is up to date with 'origin/staging'.
+      On branch staging
+      Your branch is up to date with 'origin/staging'.
 
-   Changes not staged for commit:
-   (use "git add <file>..." to update what will be committed)
-   (use "git restore <file>..." to discard changes in working directory)
-         modified:   meu texto.txt
+      Changes not staged for commit:
+      (use "git add <file>..." to update what will be committed)
+      (use "git restore <file>..." to discard changes in working directory)
+            modified:   meu texto.txt
 
-   no changes added to commit (use "git add" and/or "git commit -a")
+      no changes added to commit (use "git add" and/or "git commit -a")
 
    MINGW64(staging)
    $ git add "meu texto.txt"
 
    MINGW64(staging)
-   $ git commit -m "mergiando passo/passo"
-   [staging 717bb5e] mergiando passo/passo
-   1 file changed, 52 insertions(+), 1 deletion(-)
+   $ git status
+      On branch staging
+      Your branch is up to date with 'origin/staging'.
+
+      Changes to be committed:
+      (use "git restore --staged <file>..." to unstage)
+            modified:   meu texto.txt
+
+   MINGW64(staging)
+   $ git commit -m
+      error: switch `m' requires a value
+
+   MINGW64(staging)
+   $ git commit -m "atual merge"
+      [staging 7bea9d9] atual merge
+      1 file changed, 66 insertions(+), 66 deletions(-)
 
    MINGW64(staging)
    $ git push
-   Enumerating objects: 8, done.
-   Counting objects: 100% (8/8), done.
-   Delta compression using up to 4 threads
-   Compressing objects: 100% (6/6), done.
-   Writing objects: 100% (6/6), 1.12 KiB | 572.00 KiB/s, done.
-   Total 6 (delta 5), reused 0 (delta 0), pack-reused 0
-   remote: Resolving deltas: 100% (5/5), completed with 2 local objects.
-   To https://github.com/joao-p-g-rodrigues/estudando-git
-      10b8282..4abc5a4  staging -> staging
+      Enumerating objects: 5, done.
+      Counting objects: 100% (5/5), done.
+      Delta compression using up to 4 threads
+      Compressing objects: 100% (3/3), done.
+      Writing objects: 100% (3/3), 658 bytes | 658.00 KiB/s, done.
+      Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+      remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+      To https://github.com/joao-p-g-rodrigues/estudando-git
+         cca7261..7bea9d9  staging -> staging
 
    MINGW64(staging)
    $ git checkout master
-   Switched to branch 'master'
-   Your branch is up to date with 'origin/master'.
+      Switched to branch 'master'
+      Your branch is up to date with 'origin/master'.
 
    MINGW64(master)
-   $ git branch
-   * master
-   staging
-
-   MINGW64(master)
-   $ git status
-   On branch master
-   Your branch is up to date with 'origin/master'.
-
-   nothing to commit, working tree clean
+   $ git pull
+      Already up to date.
 
    MINGW64(master)
    $ git merge staging
-   Updating 10b8282..4abc5a4
-   Fast-forward
-   meu texto.txt | 57 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-   1 file changed, 57 insertions(+)
+      Updating cca7261..7bea9d9
+      Fast-forward
+      meu texto.txt | 132 +++++++++++++++++++++++++++++-----------------------------
+      1 file changed, 66 insertions(+), 66 deletions(-)
 
    MINGW64(master)
    $ git push
       Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
       To https://github.com/joao-p-g-rodrigues/estudando-git
-         10b8282..4abc5a4  master -> master
+         cca7261..7bea9d9  master -> master
+------------------------------------------------------------------------------------------------------
+CICLO DE TRABALHO :
+   1°. GIT PULL DA BRANCH PRINCIPAL;
+   2°. GERAR NOVA BRANCH APARTIR DA BRANCH PRINCIPAL;
+   3°. TRABALHAR E ADICIONAR NOVAS FUNCIONALIDADES NA NOVA BRANCH QUE CRIOU;
+   4°. TESTAR E FINALIZAR TRABALHO NA BRANCH TEMPORÁRIA;
+   5°. GIT CHECKOUT NA BRANCH PRINCIPAL; 
+   6°. GIT PULL ;
+   7°. TESTAR ANTES DE MERGIAR(UNIR) O CODIGO DA BRANCH TEMPORÁRIA COM A BRANCH PRINCIPAL(TESTAR DEPOIS DE MERGIAR);
+   8°. GIT PUSH DA BRANCH PRINCIPAL;
+------------------------------------------------------------------------------------------------------
