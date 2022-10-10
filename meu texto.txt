@@ -387,4 +387,55 @@ criando branches
 git merge 
 como unir o codigo
 ------------------------------------------------------------------------------------------------------
+C.E.U. Flor de Lotus@DESKTOP-608CMN9 MINGW64 /d/jao/atividades joao pedro g. rodrigues/programing/repost-tree/estudando git (staging)
+$ git status
+On branch staging
+Your branch is up to date with 'origin/staging'.
 
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   meu texto.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C.E.U. Flor de Lotus@DESKTOP-608CMN9 MINGW64 /d/jao/atividades joao pedro g. rodrigues/programing/repost-tree/estudando git (staging)
+$ git add "meu texto.txt"
+
+C.E.U. Flor de Lotus@DESKTOP-608CMN9 MINGW64 /d/jao/atividades joao pedro g. rodrigues/programing/repost-tree/estudando git (staging)
+$ git commit -m "mergiando"
+[staging 10b8282] mergiando
+ 1 file changed, 62 insertions(+), 16 deletions(-)
+
+C.E.U. Flor de Lotus@DESKTOP-608CMN9 MINGW64 /d/jao/atividades joao pedro g. rodrigues/programing/repost-tree/estudando git (staging)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 843 bytes | 281.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/joao-p-g-rodrigues/estudando-git
+   10bf9a6..10b8282  staging -> staging
+
+C.E.U. Flor de Lotus@DESKTOP-608CMN9 MINGW64 /d/jao/atividades joao pedro g. rodrigues/programing/repost-tree/estudando git (staging)
+$ git branch
+  master
+* staging
+
+C.E.U. Flor de Lotus@DESKTOP-608CMN9 MINGW64 /d/jao/atividades joao pedro g. rodrigues/programing/repost-tree/estudando git (staging)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+C.E.U. Flor de Lotus@DESKTOP-608CMN9 MINGW64 /d/jao/atividades joao pedro g. rodrigues/progr/estudando git (master)
+$ git branch
+* master
+  staging
+
+C.E.U. Flor de Lotus@DESKTOP-608CMN9 MINGW64 /d/jao/atividades joao pedro g. rodrigues/progr/estudando git (master)
+$ git merge staging
+Updating 10bf9a6..10b8282
+Fast-forward
+ meu texto.txt | 78 +++++++++++++++++++++++++++++++++++++++++++++++------------
