@@ -415,33 +415,42 @@ $ git commit -m "mergiando passo/passo"
 
 C.E.U. Flor de Lotus@DESKTOP-608CMN9 MINGW64 /d/jao/atividades joao pedro g. rodrigues/programing/repost-tree/estudando git (staging)
 $ git push
-Enumerating objects: 5, done.
-Counting objects: 100% (5/5), done.
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
 Delta compression using up to 4 threads
-Compressing objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 843 bytes | 281.00 KiB/s, done.
-Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.12 KiB | 572.00 KiB/s, done.
+Total 6 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 2 local objects.
 To https://github.com/joao-p-g-rodrigues/estudando-git
-   10bf9a6..10b8282  staging -> staging
-
-C.E.U. Flor de Lotus@DESKTOP-608CMN9 MINGW64 /d/jao/atividades joao pedro g. rodrigues/programing/repost-tree/estudando git (staging)
-$ git branch
-  master
-* staging
+   10b8282..4abc5a4  staging -> staging
 
 C.E.U. Flor de Lotus@DESKTOP-608CMN9 MINGW64 /d/jao/atividades joao pedro g. rodrigues/programing/repost-tree/estudando git (staging)
 $ git checkout master
 Switched to branch 'master'
 Your branch is up to date with 'origin/master'.
 
-C.E.U. Flor de Lotus@DESKTOP-608CMN9 MINGW64 /d/jao/atividades joao pedro g. rodrigues/progr/estudando git (master)
+C.E.U. Flor de Lotus@DESKTOP-608CMN9 MINGW64 /d/jao/atividades joao pedro g. rodrigues/programing/repost-tree/estudando git (master)
 $ git branch
 * master
   staging
 
-C.E.U. Flor de Lotus@DESKTOP-608CMN9 MINGW64 /d/jao/atividades joao pedro g. rodrigues/progr/estudando git (master)
+C.E.U. Flor de Lotus@DESKTOP-608CMN9 MINGW64 /d/jao/atividades joao pedro g. rodrigues/programing/repost-tree/estudando git (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C.E.U. Flor de Lotus@DESKTOP-608CMN9 MINGW64 /d/jao/atividades joao pedro g. rodrigues/programing/repost-tree/estudando git (master)
 $ git merge staging
-Updating 10bf9a6..10b8282
+Updating 10b8282..4abc5a4
 Fast-forward
- meu texto.txt | 78 +++++++++++++++++++++++++++++++++++++++++++++++------------
+ meu texto.txt | 57 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 57 insertions(+)
+
+C.E.U. Flor de Lotus@DESKTOP-608CMN9 MINGW64 /d/jao/atividades joao pedro g. rodrigues/programing/repost-tree/estudando git (master)
+$ git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/joao-p-g-rodrigues/estudando-git
+   10b8282..4abc5a4  master -> master
