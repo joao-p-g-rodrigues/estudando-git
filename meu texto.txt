@@ -387,6 +387,12 @@ criando branches
 git merge 
 como unir o codigo
 ------------------------------------------------------------------------------------------------------
+
+C.E.U. Flor de Lotus@DESKTOP-608CMN9 MINGW64 /d/jao/atividades joao pedro g. rodrigues/programing/repost-tree/estudando git (master)
+$ git checkout staging
+Switched to branch 'staging'
+Your branch is up to date with 'origin/staging'.
+
 C.E.U. Flor de Lotus@DESKTOP-608CMN9 MINGW64 /d/jao/atividades joao pedro g. rodrigues/programing/repost-tree/estudando git (staging)
 $ git status
 On branch staging
@@ -403,9 +409,9 @@ C.E.U. Flor de Lotus@DESKTOP-608CMN9 MINGW64 /d/jao/atividades joao pedro g. rod
 $ git add "meu texto.txt"
 
 C.E.U. Flor de Lotus@DESKTOP-608CMN9 MINGW64 /d/jao/atividades joao pedro g. rodrigues/programing/repost-tree/estudando git (staging)
-$ git commit -m "mergiando"
-[staging 10b8282] mergiando
- 1 file changed, 62 insertions(+), 16 deletions(-)
+$ git commit -m "mergiando passo/passo"
+[staging 717bb5e] mergiando passo/passo
+ 1 file changed, 52 insertions(+), 1 deletion(-)
 
 C.E.U. Flor de Lotus@DESKTOP-608CMN9 MINGW64 /d/jao/atividades joao pedro g. rodrigues/programing/repost-tree/estudando git (staging)
 $ git push
